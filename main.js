@@ -3,9 +3,6 @@ function tocaSomPom () {
     document.querySelector('#som_tecla_pom').play();
 }
 
+const listaDeTesclas = document.querySelectorAll('.tecla');
 
-
-
-alert('ola mundo');
-
-document.querySelector('.tecla_pom');
+listaDeTesclas[0].onclick = tocaSomPom;
