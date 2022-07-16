@@ -21,7 +21,23 @@ for  (let contador = 0; contador < listaDeTesclas.length;contador++) {
     tecla.onclick = function () {
         tocaSom(IdAudio)
     }
+
     
+
+    tecla.onkeydown = function (evento){
+        
+        console.log(evento.code == 'Space');
+        // tres iguais  para ele comparar ate p tipo da string 
+    
+        if(evento.code === 'Space'||evento.code==='Enter'){
+
+            tecla.classList.add('ativa');
+        }
+        tecla.onkeyup = function () {
+            tecla.classList.remove('ativa');
+        }
+    }
+   
     //console.log(contador);
 
 }
